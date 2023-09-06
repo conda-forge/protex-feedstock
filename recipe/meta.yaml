@@ -1,5 +1,5 @@
 {% set name = "protex" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/florianjoerg/protex/archive/v{{ version }}.tar.gz
-  sha256: 495b879a816f9dfa25bf5fba6f9d21e3ea1c4b55c0c6a5d268aaca28d83f9ff2
+  sha256: dbe84eb8b68b0e6f1167982e2f18ec5f7f59eec3e9b62a489fc042b95b30834b
 
 build:
   noarch: python
