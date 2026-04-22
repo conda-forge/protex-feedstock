@@ -12,14 +12,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - openmm =7.6
     - scipy
     - numpy
@@ -27,6 +27,8 @@ requirements:
     - parmed
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - protex
 
